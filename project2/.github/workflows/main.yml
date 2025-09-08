@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Compile markdown
+
+# Controls when the workflow will run
+on: 
+  push:
+    paths:
+      - '.github/workflows/main.yml'
+      - '*.md'
+
+# on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # permissions: read-all
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ github.token }}
+
+# #       # Runs a single command using the runners shell
+#       - name: File check
+#         #run: ls -Rla
+#         run: cp presentation/something.md .
+        
+      - name: Pandoc Document Converter
+        # https://github.com/maxheld83/pandoc-action
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: "relatório.md --toc -so relatório.pdf"
+
+      # Runs a set of commands using the runners shell
+      - name: Commit changes
+#         run: |
+#           git config --global user.name 'Pandoc bot'
+#           git config --global user.email 'bot@noreply.github.com'
+#           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+#           git add relat.pdf
+#           git commit -am "Compiled pdf" && git push origin master || echo "No changes to commit"
+        run: |
+          git config --global user.name 'Markdown compiler'
+          git config --global user.email 'markdowncompiler@users.noreply.github.com'
+          git add relatório.pdf
+          git commit -am "Automated report compilation"
+          git push
+

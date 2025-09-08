@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+
+{% block page_title %}Login{% endblock %}
+
+{% block page_content %}
+<form method="POST">
+    <label for="username">Username</label><br>
+    <input type="text" name="username"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="Submit">
+    {% if success %}
+    <br><span style="color:green">{{success}}</span>
+    {% elif failed %}
+    <br><span style="color:red">{{failed}}</span>
+    {% endif %}
+</form>
+{% endblock %}

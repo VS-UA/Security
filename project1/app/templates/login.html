@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+
+{% block page_title %}Login{% endblock %}
+
+{% block page_content %}
+<form method="POST">
+    <label for="username">Username</label><br>
+    <input type="text" name="username"><br>
+    {% if invalid_username %}
+    <span style="color:red">{{ invalid_username }}</span><br>
+    {% endif %}
+    <label for="password">Password</label><br>
+    <input type="password" name="password"><br>
+    {% if invalid_password %}
+    <span style="color:red">{{ invalid_password }}</span><br>
+    {% endif %}
+    <input type="submit" value="Submit">
+    {% if success %}
+    <br><span style="color:green">Success! You're logged in!</span>
+    {% elif failed %}
+    <br><span style="color:red">Login Failed!</span>
+    {% endif %}
+</form>
+{% endblock %}

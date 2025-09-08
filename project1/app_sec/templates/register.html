@@ -1,0 +1,32 @@
+{% extends 'template.html' %}
+
+{% block page_title %}Register{% endblock %}
+
+{% block page_content %}
+<form method="POST">
+    <label for="username">Username</label><br>
+    <input type="text" name="username">
+    {% if invalid_username %}
+    <span style="color:red">{{ invalid_username }}</span>
+    {% endif %}
+    <br><small>Username must have at least 8 characters and be composed of alphanumeric characters and underscores</small><br>
+    <label for="email">E-Mail</label><br>
+    <input type="email" name="email">
+    {% if invalid_email %}
+    <span style="color:red">{{ invalid_email }}</span>
+    {% endif %}
+    <br><small>A well formatted e-mail address</small><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password">
+    {% if invalid_password %}
+    <span style="color:red">{{ invalid_password }}</span>
+    {% endif %}
+    <br><small>Password must contain at least 12 characters. At least 1 a-z character, 1 A-Z character and 1 1-9 character.</small><br>
+    <input type="submit" value="Submit">
+    {% if success %}
+    <br><span style="color:green">Success! Your account was created</span>
+    {% elif failed %}
+    <br><span style="color:red">Whoops! Something went wrong creating your account</span>
+    {% endif %}
+</form>
+{% endblock %}

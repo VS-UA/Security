@@ -1,0 +1,35 @@
+{% extends 'template.html' %}
+
+{% block header %}
+  <h1>{% block title %}Profile{% endblock %}</h1>
+{% endblock %}
+
+{% block page_content %}
+<form method="get">
+  {% if isadmin %}
+    <label for="username">Administrator</label><br>
+    <img src="https://image.shutterstock.com/image-vector/user-icon-vector-600w-393536320.jpg" alt="user" width="100"><br>
+    <h1>Information</h1><br>
+    <label for="username">Username</label>
+    <span> {{ username }} </span><br>
+    <label for="email">Email</label>
+    <span> {{ email }} </span><br>
+    <label for="comments">User Comments</label>
+    {% for comment in comments %}
+      <span>{{ coment }}</span><br>
+    {% endfor %}
+  {% else %} 
+    <label for="username">User</label><br>
+    <img src="https://w7.pngwing.com/pngs/627/693/png-transparent-computer-icons-user-user-icon-thumbnail.png" alt="user" width="100"><br>
+    <h1>Information</h1><br>
+    <label for="username">Username</label>
+    <span> {{ username }} </span><br>
+    <label for="email">Email</label>
+    <span> {{ email }} </span><br>
+    <label for="comments">User Comments</label>
+    {% for comment in comments %}
+      <span>{{ coment }}</span><br>
+    {% endfor %}
+  {% endif %}
+</form>
+{% endblock %}

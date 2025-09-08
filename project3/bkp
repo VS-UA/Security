@@ -1,0 +1,500 @@
+vim prog.awk 
+ls -lR | awk -F ' ' -f prog.awk 
+ls -lR | awk -F -f prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+vim prog.awk 
+ls -lR | awk -f prog.awk 
+ls -lR | awk -f prog.awk | sed -s 's/://g'
+ls -lR | awk -f prog.awk | sed -s 's/:/\//g'
+ls -lAR | awk -f prog.awk | sed -s 's/:/\//g'
+ls -lR .. | awk -f prog.awk | sed -s 's/:/\//g'
+man ls
+vim prog.awk 
+ls -lR
+ls -lR | awk '{print $1[0]}'
+ls -lR | awk '{print $1[1]}'
+ls -lR | awk '{print substr($1, 0, 1)}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $1}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $9}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $@}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $0}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: "}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $1}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: " $1;}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: "}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print "dir: ";}'
+ls -lR | awk 'substr($1, 0, 1) == 'd' {print $0;}'
+ls -lR | awk '{ if (substr($1, 0, 1) == 'd') print $0;}'
+ls -lR | awk '{ if (substr($1, 0, 1) == 'd') print $0}'
+a so
+cd ../práticas/test1/
+ls
+vim bb1.cpp 
+vim ../threads3/fifo_safe.cpp 
+theme -s gruvbox
+lxappearance 
+brave ../threads2/doc/index.html & disown
+a so
+cd ../práticas/test1/
+ls
+cp bb1.cpp bb0.cpp
+vim bb
+vim bb0.cpp 
+zathura ~/Downloads/so+fso-2122-IPC_HANDOUT.pdf &
+vim bb0.cpp 
+term
+ls
+vim ../threads2/fifo_safe.cpp 
+h g++
+ls
+echo "g++ -ggdb -pthread -Iinclude bb1.cpp -Llib -lsoconcur" > compile.sh
+chmod +x compile.sh 
+./compile.sh 
+./a.out 
+a sio
+cd ../projetos/proj3/SIO-Projeto-3/
+ls
+vgit pull origin master
+git pull origin master
+git pull origin masin
+git pull origin main
+vim attack.md 
+git add attack.md 
+com "Finnished attack matrix"
+git push origin master
+git push origin main
+a so
+cd ../práticas/test1/
+ls
+sh compile.sh 
+vim compile.sh 
+sh compile.sh 
+vim bb0.cpp 
+vim ../threads3/bounded-buffer/fifo_safe.cpp 
+vim bb0.cpp 
+a so
+brave doc/index.html & disown
+decomp so+fso-1920-epnm-src.zip 
+zathura *.pdf &
+ls
+cd src/
+ls
+vim pfifo.cpp 
+term
+vim pfifo.cpp 
+ls
+vim urgency.cpp 
+make
+vim pfifo.cpp 
+make
+ls
+./urgency 
+theme -s light
+./urgency 
+vim
+theme -s gruvbox
+./urgency 
+vim urgency.cpp 
+theme -s nord
+theme -s gruvbox
+lxappearance 
+./urgency 
+vim urgency.cpp 
+make
+./urgency 
+vim urgency.cpp 
+make
+./urgency 
+vim urgency.cpp 
+pkill zoom
+vim urgency.cpp 
+./urgency -h
+./urgency -p 1
+vim urgency.cpp 
+make
+./urgency -p 1
+vim urgency.cpp
+make
+./urgency -p 1
+vim urgency.cpp
+make
+./urgency -p 1
+make cleanall
+make
+./urgency -p 1
+vim urgency.cpp
+a so
+cd ../práticas/threads2/
+ls
+vim fifo_safe.cpp 
+cd ../threads3/
+ls
+vim bounded-buffer/fifo_safe.
+vim bounded-buffer/fifo_safe.cpp 
+cp bounded-buffer/fifo_safe.cpp ../threads4/src/ 
+cd ../threads4/src/
+vim pfifo.cpp 
+make
+vim pfifo.
+vim pfifo.cpp 
+make
+./urgency -p 1
+vim urgency.cpp 
+make
+./urgency -p 1
+a so
+cd ../práticas/threads4/
+ls
+cd src/
+make
+make cleanall
+make
+./urgency 
+vim pfifo.cpp 
+make
+./urgency 
+make cleanall; make
+make cleanall; make; ./urgency 
+vim pfifo.cpp 
+make cleanall; make; ./urgency 
+vim pfifo.cpp 
+make cleanall; make; ./urgency 
+vim pfifo.cpp 
+pacman -Syu
+sudo pacman -Syu
+polkid
+polkit
+which polkit
+pkexec
+pkexec -v
+pkexec --version
+a so
+nbedit 15-SO-25_01_2022-exame.md 
+zathura pdf/15-SO-25_01_2022-exame.pdf 
+nbedit 15-SO-25_01_2022-exame.md 
+a so
+cd ../práticas/threads4/src/
+ls
+make cleanall; make; ./urgency 
+make cleanall; make; ./urgency -p 1
+cd ../../threads3/bounded-buffer/
+vim fifo_safe.
+vim fifo_safe.cpp 
+a so
+cd ../práticas/threads4/src/
+vim urgency.cpp 
+make cleanall; make; ./urgency
+vim urgency.cpp 
+make cleanall; make; ./urgency
+vim urgency.cpp 
+term
+vim pfifo.
+vim pfifo.cpp 
+make cleanall; make; ./urgency
+vim pfifo.cpp 
+make cleanall; make; ./urgency
+vim pfifo.cpp 
+vim urgency.cpp 
+htop
+a rc1
+a sio
+cd ../projetos/proj3/SIO-A
+cd ../projetos/proj3/SIO-Projeto-3/
+ls
+cd ..
+ls
+h awk
+ls -lR .. | awk -f prog.awk | sed -s 's/:/\//g'
+ls -lR .. | awk -f prog.awk | sed -s 's/:/\//g' > f
+for ln in `cat f`; do [ -d $ln ] && echo $ln; done
+for ln in `cat f`; do [ -d $ln ] || echo $ln; done
+for ln in `cat f`; do [ -d $ln ] || echo $ln; done > f
+for ln in `cat f`; do [ -d $ln ] && echo $ln; done
+cat prog.awk 
+h paste
+ls tmp/ua/
+cd tmp/ua/
+decomp sio-2122-proj3-clean.zip 
+ls
+a sio
+ping 8.8.8.8
+a ia
+cd ..
+vim todo.txt
+a ia
+theme -s light
+lxappearance 
+du
+df
+df -h
+mv ~/Downloads/guiao-tp.tgz .
+mv ~/Downloads/ia-2022-TopicosIA.pdf .
+decomp guiao-tp.tgz 
+vim tp.md
+pandoc tp.md -so tp.pdf
+zathura tp.pdf 
+zathura tp.pdf &
+vim tp.md
+zathura tp.pdf &
+pandoc tp.md -so tp.pdf
+vim tp.md
+pandoc tp.md -so tp.pdf
+vim tp.md
+pandoc tp.md -so tp.pdf
+vim tp.md
+pandoc tp.md -so tp.pdf
+rm FLIX-Ticket-1119862157.pdf 
+aft-mtp-mount mnt/
+a rc1
+cd ../práticas/proj1/
+zathura Projeto_RC1_2021.pdf &
+thunar.
+thunar . & disown
+theme -s gruvbox
+lxappearance 
+pikaur -Syu
+a so
+cd ../práticas/
+mkdir threads5
+cp threads4/so+fso-1920-epnm-src.zip threads5
+cd threads5/
+decomp so+fso-1920-epnm-src.zip 
+cd src/
+vim pfifo.cpp 
+make
+cat client.py 
+ls
+cat server.py 
+ls
+cat site.html 
+cat vision.html 
+ls
+cat service.html 
+vim urgency.old 
+mv urgency.old urgency.old.cpp
+vim urgency.old.cpp 
+vim Makefile 
+mv urgency.cpp u.old
+mv urgency.old.cpp urgency.cpp
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+./urgency 
+./urgency -p 10
+./urgency -p 10 -d 3
+./urgency -p 10 -d 3 -n 2
+./urgency -p 100 -d 3 -n 2
+./urgency -p 100 -d 10 -n 2
+./urgency -p 100 -d 10 -n 3
+a so
+cd ../práticas/threads5
+ls
+cd s
+cd src/
+ls
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+vim urgency.cpp 
+make
+./urgency 
+vim urgency
+vim urgency.cpp 
+./urgency -p1
+./urgency -p 1
+./urgency -p 2
+./urgency -p 10
+gdb
+gdb ./urgency
+vim urgency.cpp 
+gdb ./urgency
+cd ../..
+mv ~/Downloads/SO-main.zip .
+decomp SO-main.zip 
+ls
+cd SO-main
+ls
+cd IPC_03/
+make
+ls
+cd src/
+make
+ls
+rm urgency
+make cleanall
+make
+cd ../../../threads5/src/
+mv urgency.cpp urgency.old
+cp ../../SO-main/IPC_03/src/urgency.cpp .
+make
+vim urgency.cpp 
+make
+./urgency 
+./urgency -p 10
+./urgency -p 10 -d 4
+diff urgency.cpp urgency.old 
+vim urgency.cpp 
+diff urgency.cpp urgency.old 
+make
+./urgency -p 10 -d 4
+diff urgency.cpp urgency.old 
+term
+vim urgency.cpp 
+man ifcon
+man ifconfig
+a rc1
+zathura ../práticas/Guide2_RC1_full\(1\).pdf 
+zathura ~/Downloads/Guide3_RC1_DHCP_NAT_IPv6_VMware.pdf &
+zathura ~/Downloads/Guide6_Transport_Apps_v1\(1\).pdf &
+a so
+cd ../práticas/threads5/src/
+ls
+make
+./urgency 
+./urgency -d 10
+./urgency -d 10 -p 100
+./urgency -d 10 -p 100 -n 5
+ls
+term
+male
+make
+vim urgency.cpp 
+make
+./urgency -d 10 -p 100 -n 5
+vim urgency.cpp 
+vim u.old 
+mv u.old u.cpp
+vim u.cpp 
+cd ../Documents/
+ls *.ova
+zip client RC\ client.ova 
+h d
+du *.zip
+du -h *.zip
+a rc1
+cd ../práticas/proj1/
+zip proj1-final/ proj1.zip
+zip proj1.zip proj1-final/*
+df -h proj1.zip 
+du -h proj1.zip 
+du -h proj1-final/
+man zip
+zip -r proj1.zip proj1-final
+du -h proj1.zip 
+zip -r proj1.zip proj1-final ~/VirtualBox\ VMs/LabComServer2/ ~/VirtualBox\ VMs/RC\ client/
+du -h proj1.zip 
+thunar .
+thunar . & disown
+zip -r proj1_gns.zip proj1-final
+/dev/sem
+ls /dev/sem/
+a rc1
+cd ..
+mv ~/Downloads/Testes_praticos.zip .
+decomp Testes_praticos.zip 
+ls
+cd Testes\ praticos/
+ls
+ls Whats*
+feh Whats*
+feh Whats/10.jpeg 
+feh 2017-2018/
+ls *
+feh 2017-2018/
+feh */*
+h zip
+a rc1
+a sio
+cd ../projetos/proj3/SIO-Projeto-3/
+git pull origin main
+vim attack.md 
+git add attack.md 
+com "Simplified the attack reproduction"
+git push origin master
+git push origin main
+vim attack.md 
+git add .
+com "Small fixes"
+git push origin main
+theme -s light
+lx
+lxappearance 
+ping com
+a sio
+cd ../projetos/proj3/SIO-Projeto-3/
+git pull origin main
+git log
+git pull origin main
+vim attack.md 
+git diff attack.md 
+git diff
+man git-diff
+git diff attack.md e300cf0
+git diff e300cf0
+vim attack.md 
+git add .
+com "Small fixes"
+git push origin master
+git push origin main
+theme -s gruvbox
+lxappearance 
+rm 2102193827_RXPNLB5.pdf 
+aft-mtp-mount mnt/
+a rc1
+cd ../práticas/proj1/
+ls
+codium server.py 
+a sio
+cd ../projetos/proj3/
+cd SIO-Projeto-3/
+git pull origin main
+vim attack.md 
+git pull origin main
+vim attack.md 
+git add .
+ls
+com "Added easy to read fixes"
+git push origin main
+a sio
+cd ../projetos/proj3/SIO-Projeto-3/
+git oull origin main
+git pull origin main
+vim attack.md 
+git add .
+vim attack.md 
+git add .
+com "Stressed more the need for further investigation"
+git push origin main
+pandoc attack.md -so report.pdf --toc 
+git add report.pdf 
+com "Compiled the report"
+git push origin main
+vim attack.md 
+pandoc attack.md -so report.pdf --toc 
+git add .
+com "Added section for fruitless research"
+git push origin main

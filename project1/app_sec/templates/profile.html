@@ -1,0 +1,54 @@
+{% extends 'template.html' %}
+
+{% block header %}
+  <h1>{% block title %}Profile{% endblock %}</h1>
+{% endblock %}
+
+{% block page_content %}
+<form method="post" action="#">
+  <label for="Username">USERNAME</label><br>
+  <input type="username" name="username"><br>
+  {% if invalid_username %}
+  <span style="color:red">{{ invalid_username }}</span><br>
+  {% endif %}
+  <label for="Email">EMAIL</label><br>
+  <input type="email" name="email"><br>
+  {% if invalid_email %}
+  <span style="color:red">{{ invalid_email }}</span><br>
+  {% endif %}
+  <input type="submit" value="Submit" name="Submit">
+  {% if success %}
+  <br><span style="color:green">Success! Here's the profile!</span>
+  {% else %}
+  <br><span style="color:red">No permission to view this profile!</span>
+  {% endif %}
+</form>
+
+<form method="get">
+  {% if isadmin %}
+    <label for="username">Administrator</label><br>
+    <img src="https://w7.pngwing.com/pngs/627/693/png-transparent-computer-icons-user-user-icon-thumbnail.png" alt="user" width="100"><br>
+    <h1>Information</h1><br>
+    <label for="username">Username</label>
+    <span> {{ username }} </span><br>
+    <label for="email">Email</label>
+    <span> {{ email }} </span><br>
+    <label for="comments">User Comments</label>
+    {% for comment in comments %}
+      <span>{{ coment }}</span><br>
+    {% endfor %}
+    {% else %} 
+    <label for="username">User</label><br>
+    <img src="https://image.shutterstock.com/image-vector/user-icon-vector-600w-393536320.jpg" alt="user" width="100"><br>
+    <h1>Information</h1><br>
+    <label for="username">Username</label>
+    <span> {{ username }} </span><br>
+    <label for="email">Email</label>
+    <span> {{ email }} </span><br>
+    <label for="comments">User Comments</label>
+    {% for comment in comments %}
+      <span>{{ coment }}</span><br>
+    {% endfor %}
+  {% endif %}
+</form>
+{% endblock %}

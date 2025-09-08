@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{% block header %}
+  <h1>{% block title %}Profile{% endblock %}</h1>
+{% endblock %}
+
+{% block page_content %}
+<form method="post" action="#">
+  <label for="Username">USERNAME</label><br>
+  <input type="username" name="username"><br>
+  {% if invalid_username %}
+  <span style="color:red">{{ invalid_username }}</span><br>
+  {% endif %}
+  <label for="Email">EMAIL</label><br>
+  <input type="email" name="email"><br>
+  {% if invalid_email %}
+  <span style="color:red">{{ invalid_email }}</span><br>
+  {% endif %}
+  <input type="submit" value="Submit" name="Submit">
+  {% if success %}
+  <br><span style="color:green">Success! Here's the profile!</span>
+  {% else %}
+  <br><span style="color:red">No permission to view this profile!</span>
+  {% endif %}
+</form>
+{% endblock %}

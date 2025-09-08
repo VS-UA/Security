@@ -1,0 +1,11 @@
+{% extends 'template.html' %}
+
+{% block page_title %}E-Login{% endblock %}
+
+{% block page_content %}
+<form method="POST">
+    <label for="sessionID">Session ID</label><br>
+    <input type="text" name="sessionID"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

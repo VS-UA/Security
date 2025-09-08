@@ -1,0 +1,4 @@
+https://unaaldia.hispasec.com/2012/09/rematando-ms-chap-v2-microsoft-aconseja-dejar-de-usarlo-sin-encapsular-ii.html
+https://www.schneier.com/academic/archives/1999/09/cryptanalysis_of_mic_1.html
+https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-CHAP/%5BMS-CHAP%5D.pdf
+http://sweet.ua.pt/jpbarraca/course/sio-2122/project-2/

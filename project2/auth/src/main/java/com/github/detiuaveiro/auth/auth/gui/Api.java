@@ -1,0 +1,1 @@
+package com.github.detiuaveiro.auth.auth.gui;

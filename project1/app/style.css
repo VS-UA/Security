@@ -1,0 +1,15 @@
+p {
+	font-size: 20px;
+}
+
+.post {
+	margin-left: 50px;
+}
+
+.post {
+	border-style: solid;
+	border-top: 0ch;
+	border-bottom: 0cm;
+	border-right: 0em;
+	border-color: red;
+}
